@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form class="login-form" action="/register" method="post">
+    <div class="header">
+        <h1>CREATE ACCOUNT</h1>
+    </div>
+    <div class="body">
+        <div class="horizontal">
+            <div class="left">
+                <label for="fn" class="label">First Name<sup>*</sup></label>
+                <input type="text" id="fn" class="input" placeholder="Enter First Name" required>
+            </div>
+            <div class="right">
+                <label for="ln" class="label">Last Name<sup>*</sup></label>
+                <input type="text" id="ln" class="input" placeholder="Enter Last Name" required>
+            </div>
+        <div class="group">
+            <label for="mailid" class="label">Email <sup>*</sup></label>
+            <input type="email" id="mailid" class="input" placeholder="Enter mailid" required>
+            <div class="left">
+                <label for="newpassword" class="label">password<sup>*</sup></label>
+                <input type="password" id="newpassword" class="input" placeholder="Enter password" required>
+            </div>
+            <div class="right">
+                <label for="conform-password" class="label">Re-type Password <sup>*</sup></label>
+                <input type="password" id="conform-password" class="input" placeholder="Enter conform-password" required>
+            </div>
+            </div>
+        </div>
+        <div type="horizontal">
+            <div class="left">
+                <label class="label">Gender:</label>
+                <div class="input">
+                    <input type="radio" id ="gen1" name="gen1">
+                    <label for="gen1" class="label">Male</label>
+                    <input type="radio" id="gen2" name="gen2">
+                    <label for="gen2" class="label">Female</label>
+                </div>
+            </div>
+                <div class="right">
+                <label class="label">Hobbies:</label>
+                <div>
+                    <input type="checkbox" id="music" name="music">
+                    <label for="music" class="label">Music</label>
+                    <input type="checkbox" id="sports" name="sports">
+                    <label for="sports" class="label">Sports</label>
+                    <input type="checkbox" id="travel" name="travel">
+                    <label for="travel" class="label">Travel</label>
+                    <input type="checkbox" id="movies" name="movies">
+                    <label for="movies" class="label">Movies</label>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal">
+            <div class="left">
+                <label class="label">Soucre of Income</label>
+                <select class="input" id="level">
+                    <option>Employed</option>
+                    <option>Unemployed</option>
+                    <option>Self Employed</option>
+                </select>
+            </div>
+            <div class="right">
+                <label for="income" class="label">Income</label>
+                <input type="range" min="10" max="100" step="5" value="0" id="income" class="input">
+                <span id="range">20k</span>
+            </div>
+        </div>
+        <div class="horizontal">
+                <label for="select" class="label">Upload Profile picture<sup>*</sup></label>
+                <input type="file" id="select" accept=".jpg,.png,.jpeg,.webp" required>
+            </div>
+            <div class="horizontal">
+                <label for="income" class="label">Age</label>
+                <input type="number" min="18" max="100" value="18" class="input" readonly required>
+            </div>
+        <div class="group">
+            <label for="select" class="label">Bio</label>
+            <textarea class="input" rows="4" cols="100"></textarea>
+        </div>
+    </div>
+    <div class="footer">
+        <button type="submit" class="button" onclick="alert('CREATE ACCOUNT Completed Successd')">Create</button>
+    </div>
+   </form>
+        
+</body>
+</html>
