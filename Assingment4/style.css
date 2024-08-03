@@ -1,0 +1,44 @@
+*{
+    text-align: center;
+}
+.profile-card {
+    background-color: rgba(8, 253, 249, 0.817);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(247, 99, 99, 0.874);
+    height: 550px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+}
+h2{
+    color:red;
+}
+
+.bio {
+    color: #000000;
+}
+
+.social-links .btn {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.mail {
+    color: rgb(129, 98, 98);
+    text-align: left;
+    padding-left: 60px;
+}
+.n{
+    color: rgb(223, 163, 163);
+    text-align: left;
+    padding-right: 60px;
+}
+
+
+b {
+    padding-right: 10px;
+}
